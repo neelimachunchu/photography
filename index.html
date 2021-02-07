@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Photography</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script>
+      function checkRegistration()
+      {
+          var name1 = document.forms["registration"]["Firstname"];
+          var name2 = document.forms["registration"]["Lastname"];
+          var email = document.forms["registration"]["Email"];
+          var password = document.forms["registration"]["Password"];
+          var address = document.forms["registration"]["Address"];
+          var city = document.forms["registration"]["City"];
+          
+          if (name1.value=="")
+              {
+                  window.alert("Please enter your Firstname");
+                  name1.focus();
+                  return false;
+              }
+              if (name2.value=="")
+              {
+                  window.alert("Please enter your Lastname");
+                  name1.focus();
+                  return false;
+              }
+              if (email.value=="")
+                  {
+                      window.alert("Please enter your email id");
+                      email.focus();
+                      return false;
+                  }
+              if (email.value.indexOf("@", 0)<0)
+                  {
+                      window.alert("Please enter a valid email");
+                      email.focus();
+                      return false;
+                  }
+              if (email.value.indexOf(".", 0)<0)
+                  {
+                      window.alert("Please enter a valid email");
+                      email.focus();
+                      return false;
+                  }
+                  if (password.value=="")
+                  {
+                      window.alert("Please enter your password");
+                      password.focus();
+                      return false;
+                  }
+                  if (address.value=="")
+                  {
+                      window.alert("Please enter your address");
+                      address.focus();
+                      return false;
+                  }
+                  if (city.value=="")
+                  {
+                      window.alert("Please enter your city");
+                      city.focus();
+                      return false;
+                  }
+              
+            return true;
+            }      
+</script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="icon" href="http://icons.iconarchive.com/icons/icons8/windows-8/512/Photo-Video-Slr-Large-Lens-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light" style="background-color:bisque !important">
+        <a class="navbar-brand animated zoomIn delay-1s" href="https://harshigoud.github.io/photography/">Snap World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#service1">Tips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#register">Signup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#service2">Contact us</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" style="background-color:lightyellow !important">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img src="https://cdn.mos.cms.futurecdn.net/gvQ9NhQP8wbbM32jXy4V3j.jpg" class="d-block w-100 viewHeight" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://iso.500px.com/wp-content/uploads/2016/10/stock-photo-159358357.jpg" class="d-block w-100 viewHeight" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://icdn2.digitaltrends.com/image/nikon-d850-review-4-1200x630-c-ar1.91.jpg" class="d-block w-100 viewHeight" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-4">Hello Photographer</h1>
+         <hr class="my-4"> 
+        <p>Whether you’re a budding photographer or just fancy seeing the sights and getting some top-notch snaps along the way, these fun and informative experiences are for you. Grab your camera and head out around some of Britain’s best landscapes, urban
+            or other, and learn some tips and tricks to upgrade your photography skills, one photo at a time. From London’s Square Mile to the wild of safari, whatever you choose, you’re sure to come away with some frame-worthy photos and techniques to
+            last a lifetime.Photography is the art of capturing light with a camera, usually via a digital sensor or film, to create an image. With the right camera equipment, you can even photograph wavelengths of light invisible to the human eye, including
+            UV, infrared, and radio.</p>
+        <a class="btn btn-primary btn-lg" href="https://photographylife.com/what-is-photography" role="button">Learn more</a>
+    </div>
+    
+   <center><h1> Tips for Photography</h1></center> 
+    <br>
+    <div class="container">
+        <div class="row" id="service1">
+            <div class="card col-md-4" style="width: 18rem;">
+                <img src="https://www.bradbaker.com.au/wp-content/uploads/bjb_201207Apr_2096-copy.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Focusing</h5>
+                    <p class="card-text">In order to use autofocus, at least your camera or your lens must have an autofocus motor. That seems simple enough – but “autofocus” lenses don’t always have a built-in motor, and neither does every camera on the market! Specifically,
+                        if you shoot with the Nikon D3500 or D5600 (or an older model in the same lineup), pay attention to your lens purchases. You’ll want one that is designated AF-S or AF-P if you need autofocus; avoid AF-D.</p>
+                    <h6>For more info</h6><a href="https://photographylife.com/understanding-focus-in-photography#:~:text=Any%20object%20in%20your%20photo,maximum%20sharpness%2C%20that's%20called%20focusing." class="btn btn-primary">Click here</a>
+                </div>
+            </div>
+
+
+
+            <div class="card col-md-4" style="width: 18rem;">
+                <img src="https://images.fineartamerica.com/images-medium-large/silhouette-of-photographer-with-big-sun-seisiri-silapasuwanchai.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Set Shutter Speed</h5>
+                    <p class="card-text">When the camera is set to “Auto” mode, the shutter speed is selected by the camera without your input (and so are aperture and ISO). However, you can still set shutter speed manually if necessary:<br> 1.By setting the camera to “Shutter
+                        Priority” mode, you choose the shutter speed, and the camera automatically selects the aperture.<br> 2.By setting the camera to “Manual” mode, you choose both shutter speed and aperture manually.</p>
+                    <h6>For more info</h6><a href="https://photographylife.com/shutter-speed" class="btn btn-primary">Click here</a>
+                </div>
+            </div>
+            <div class="card col-md-4" style="width: 18rem;">
+                <img src="https://fineartamerica.com/images/artistlogos/lynn-hurst-1440747705-square.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Camera Set Up</h5>
+                    <p class="card-text">Image Quality: RAW RAW <br> Recording: Lossless Compressed (if available) <br> White Balance: Auto Picture Control / <br> Picture Style / Creative Style / Film Simulation: Standard <br> Color Space: sRGB <br> Long Exposure Noise Reduction:
+                        On <br> High ISO Noise Reduction: Off <br> Active D-Lighting / DRO, HDR, Lens Corrections (Vignette Control, Chromatic Aberration Control, Distortion Control, etc):</p>
+                    <h6>For more info</h6><a href="https://expertphotography.com/travel-photographers-camera-settings/" class="btn btn-primary">Click here</a>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <br>
+
+    
+     <div class="jumbotron">
+      <h3 class="display-6">The factors that can influence your photography</h3>
+      <hr class="my-6">
+      <p>As a photographer, there is no limit to your education and the quality of your picture is only
+        restricted by the effort you put in. The more distance you’re willing to cover in terms of effort, 
+        the better results you’ll see. Simply attaching watermarks to your photos does not make you a good 
+        photographer and neither does buying an expensive camera for that matter.
+        If you want to improve your photography skills and are looking for ways to increase your know-how 
+        on taking really great photos then you should consider the following deciding factors which can mean 
+        the difference between eye-catching photos or dull and forgettable ones:</p>
+      <b>1. Information: </b>As a photographer, you need to know exactly what kind of equipment you are using. You should also know what kind of lens is suitable at what stage of the process, and what the complete specifications and capabilities of your camera are.
+      <br><b>2. Distance from object</b>
+      The distance present between you and the object you are capturing is of the essence. The distance governs how you want take photos and how you should use your camera.
+      <br><b>3. Lighting</b>
+      Shooting and capturing pictures in sunlight is comparatively easier compared to taking photos at night.
+      <br><b>4. Angle</b>
+      A professional photographer has the ability to take a good shot even using a a poor or mediocre camera than an amateur photographer taking photos with Canon’s latest contraption. This largely owes to the positioning and angle of the picture.
+    </div>
+
+    <center>
+      <div class="btn-group btn-group-justified col-md-6">
+                  <a href="https://photographylife.com/photo-spots" class="btn btn-primary">Photospots</a>
+                  <a href="https://photographylife.com/lenses" class="btn btn-primary">Lenses</a>
+                  <a href="https://photographylife.com/shop" class="btn btn-primary">Shop</a>
+                </div>
+  </center>
+  <br>
+  <br>
+
+
+
+
+
+    <center>
+        <h1>A great picture is all about perspective</h1>
+    </center>
+
+    <center>
+        <div class="col-sm-11">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Here we have the list of top colleges for photography</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <h6>For more info</h6>
+                    <a href="https://www.collegedekho.com/mass-comm/photography-colleges-in-india/" class="btn btn-primary">Click here</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-11">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Here we have the special team of photographers</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <h6>For more info</h6>
+                    <a href="https://www.ranker.com/list/famous-photographers-from-india/reference" class="btn btn-primary">Click here</a>
+                </div>
+            </div>
+        </div>
+    
+    </center><br>
+    <br>
+    
+       
+    <center>
+      <h1 style="font-size: 30px; color: black;">Sign up here for updates from us.</h1>
+    </center>
+    <form action="success.html" name="registration" onsubmit="return checkRegistration()" >
+        <div class="form-row" id="register">
+            <div class="form-group col-md-6">
+                <label for="inputFirstname4">Firstname</label>
+                <input type="name" class="form-control" id="inputEmail4" name="Firstname" placeholder="Enter your firstname">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputLastname4">Lastname</label>
+                <input type="name" class="form-control" id="inputEmail4" name="Lastname" placeholder="Enter your lastname">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" name="Email" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" name="Password" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" name="Address" placeholder="1234 Main St">
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" name="city" id="inputCity">
+            </div><br>
+            <div class="form-group col-md-6">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                                          <option selected>Choose...</option>
+                                          <option>Andhra Pradesh</option>
+                                          <option>Kerala</option>
+                                          <option>Maharastra</option>
+                                          <option>Madhya Pradesh</option>
+                                          <option>Telangana</option>
+                                          
+                                        </select>
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                                          Check me out
+                                        </label>
+            </div>
+        </div>
+        <CENTER> <button type="submit" class="btn btn-primary">Sign up</button></CENTER>
+    </form>
+    <br>
+    <br><br>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <section id="sec-contact" class="sec-contact pt-5 pb-5">
+        <div class="container" id="service2">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-7">
+              <h1 class="h4">Have a question? Get in touch with us!</h1>
+              
+              <form action="question.html" method="">
+                <fieldset class="form-group">
+                  <label for="formName">Your Name:</label>
+                  <input id="formName" class="form-control" type="text" placeholder="Your Name" required>
+                </fieldset>
+                  
+                <fieldset class="form-group">
+                  <label for="formEmail1">Email address:</label>
+                  <input id="formEmail1" class="form-control" type="email" placeholder="Enter email" required>
+                </fieldset>
+                
+                <fieldset class="form-group">
+                  <label for="formMessage">Your Message:</label>
+                  <textarea id="formMessage" class="form-control" rows="3" placeholder="Your message" required></textarea>
+                </fieldset>
+                
+                <fieldset class="form-group text-center">
+                  <button class="btn btn-primary" type="submit">Send Message</button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+ <!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!--Grid row-->
+      <div class="row">
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-12 mb-4">
+  
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6 mb-4">
+  
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6 mb-4">
+  
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-12 mb-4">
+  
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6 mb-4">
+  
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(82).jpg" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6 mb-4">
+  
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(84).jpg" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+      </div>
+      <!--Grid row-->
+  
+    </div>
+    
+  
+  </footer>
+  <!-- Footer -->
+<!-- Footer -->
+<!-- Footer -->
+
+  </footer>
+  <!-- Footer -->
+  
+
+
+
+  <div class="container"></div>
+        <hr>
+            <div class="text-center center-block">
+                <p class="txt-railway">SnapWorld.com -</p>
+                
+                    <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                    <a href="https://twitter.com/?lang=en"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                    <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                    <a href="mailto:chunchuneelima1999@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+    </div>
+        <hr>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="https://harshigoud.github.io/photography/"> SnapWorld.com</a>
+      </div>
+</body>
+
+</html>
